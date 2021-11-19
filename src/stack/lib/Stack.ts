@@ -27,16 +27,18 @@ export class Stack<T> {
     }
 
     pop (): T {
-        if (this.items.length !== 0) {
-            if (this.items.length === 1) {
-                this.top = null;
-                return this.items.pop();
-            } else {
-                this.top = this.items[this.items.length - 2];
-                return this.items.pop();
-            }
-        } else {
+        if (this.items.length === 0) {
             return null;
         }
+
+        if (this.items.length === 1) {
+            this.top = null;
+
+            return this.items.pop();
+        }
+
+        this.top = this.items[this.items.length - 2];
+
+        return this.items.pop();
     }
 }

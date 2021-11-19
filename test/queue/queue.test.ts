@@ -1,16 +1,16 @@
 import {} from 'jasmine';
 import {expect} from 'chai';
 import {} from 'mocha';
-import {DoublyLinkedList} from "../../src/queue/lib/DoublyLinkedList";
-import {Queue} from "../../src/queue/lib/Queue";
-import {findBin} from "../../src/queue/FindBin";
+import {DoublyLinkedList} from '../../src/queue/lib/DoublyLinkedList';
+import {Queue} from '../../src/queue/lib/Queue';
+import {findBin} from '../../src/queue/FindBin';
 
 describe(`Doubly linked list`, () => {
     it(`should work`, () => {
         const testCases = [
             {
-                listA: [1,5,8],
-            },
+                listA: [1,5,8]
+            }
         ];
 
         const list = new DoublyLinkedList();
@@ -29,8 +29,8 @@ describe(`Queue`, () => {
     it(`should work`, () => {
         const testCases = [
             {
-                listA: [1,0,-1,2,0,9],
-            },
+                listA: [1,0,-1,2,0,9]
+            }
         ];
 
         const queue = new Queue();
@@ -48,7 +48,6 @@ describe(`Queue`, () => {
     });
 });
 
-
 describe(`findBin`, () => {
     it(`should work`, () => {
         const testCases = [
@@ -63,7 +62,7 @@ describe(`findBin`, () => {
             {
                 n: 5,
                 result: ['1', '10', '11', '100', '101']
-            },
+            }
         ];
 
         testCases.forEach(({n, result}) => {

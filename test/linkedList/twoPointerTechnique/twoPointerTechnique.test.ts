@@ -2,11 +2,11 @@ import {} from 'jasmine';
 import * as assert from 'assert';
 import {expect} from 'chai';
 import {} from 'mocha';
-import {MyLinkedList} from "../../../src/linkedList/singlyLinkedList/design-linked-list";
+import {MyLinkedList} from '../../../src/linkedList/singlyLinkedList/design-linked-list';
 import {
     getIntersectionNode,
     makeLinkNodes, makeLinkNodesValues, removeElements, removeNthFromEnd, reverseList
-} from "../../../src/linkedList/twoPointerTechnique/twoPointerTechnique";
+} from '../../../src/linkedList/twoPointerTechnique/twoPointerTechnique';
 
 describe(`Linked List Cycle II`, () => {
     it(`addAtHead`, () => {
@@ -257,8 +257,8 @@ describe(`Linked List Cycle II`, () => {
     });
     it(`4`, () => {
         const list = new MyLinkedList();
-        const commands = ["MyLinkedList","addAtHead","addAtTail","addAtTail","addAtTail","addAtTail","addAtTail","addAtTail","deleteAtIndex","addAtHead","addAtHead","get","addAtTail","addAtHead","get","addAtTail","addAtIndex","addAtTail","addAtHead","addAtHead","addAtHead","get","addAtIndex","addAtHead","get","addAtHead","deleteAtIndex","addAtHead","addAtTail","addAtTail","addAtIndex","addAtTail","addAtHead","get","addAtTail","deleteAtIndex","addAtIndex","deleteAtIndex","addAtHead","addAtTail","addAtHead","addAtHead","addAtTail","addAtTail","get","get","addAtHead","addAtTail","addAtTail","addAtTail","addAtIndex","get","addAtHead","addAtIndex","addAtHead","addAtTail","addAtTail","addAtIndex","deleteAtIndex","addAtIndex","addAtHead","addAtHead","deleteAtIndex","addAtTail","deleteAtIndex","addAtIndex","addAtTail","addAtHead","get","addAtIndex","addAtTail","addAtHead","addAtHead","addAtHead","addAtHead","addAtHead","addAtHead","deleteAtIndex","get","get","addAtHead","get","addAtTail","addAtTail","addAtIndex","addAtIndex","addAtHead","addAtTail","addAtTail","get","addAtIndex","addAtHead","deleteAtIndex","addAtTail","get","addAtHead","get","addAtHead","deleteAtIndex","get","addAtTail","addAtTail"]
-        const values = [[],[38],[66],[61],[76],[26],[37],[8],[5],[4],[45],[4],[85],[37],[5],[93],[10,23],[21],[52],[15],[47],[12],[6,24],[64],[4],[31],[6],[40],[17],[15],[19,2],[11],[86],[17],[55],[15],[14,95],[22],[66],[95],[8],[47],[23],[39],[30],[27],[0],[99],[45],[4],[9,11],[6],[81],[18,32],[20],[13],[42],[37,91],[36],[10,37],[96],[57],[20],[89],[18],[41,5],[23],[75],[7],[25,51],[48],[46],[29],[85],[82],[6],[38],[14],[1],[12],[42],[42],[83],[13],[14,20],[17,34],[36],[58],[2],[38],[33,59],[37],[15],[64],[56],[0],[40],[92],[63],[35],[62],[32]]
+        const commands = ['MyLinkedList','addAtHead','addAtTail','addAtTail','addAtTail','addAtTail','addAtTail','addAtTail','deleteAtIndex','addAtHead','addAtHead','get','addAtTail','addAtHead','get','addAtTail','addAtIndex','addAtTail','addAtHead','addAtHead','addAtHead','get','addAtIndex','addAtHead','get','addAtHead','deleteAtIndex','addAtHead','addAtTail','addAtTail','addAtIndex','addAtTail','addAtHead','get','addAtTail','deleteAtIndex','addAtIndex','deleteAtIndex','addAtHead','addAtTail','addAtHead','addAtHead','addAtTail','addAtTail','get','get','addAtHead','addAtTail','addAtTail','addAtTail','addAtIndex','get','addAtHead','addAtIndex','addAtHead','addAtTail','addAtTail','addAtIndex','deleteAtIndex','addAtIndex','addAtHead','addAtHead','deleteAtIndex','addAtTail','deleteAtIndex','addAtIndex','addAtTail','addAtHead','get','addAtIndex','addAtTail','addAtHead','addAtHead','addAtHead','addAtHead','addAtHead','addAtHead','deleteAtIndex','get','get','addAtHead','get','addAtTail','addAtTail','addAtIndex','addAtIndex','addAtHead','addAtTail','addAtTail','get','addAtIndex','addAtHead','deleteAtIndex','addAtTail','get','addAtHead','get','addAtHead','deleteAtIndex','get','addAtTail','addAtTail'];
+        const values = [[],[38],[66],[61],[76],[26],[37],[8],[5],[4],[45],[4],[85],[37],[5],[93],[10,23],[21],[52],[15],[47],[12],[6,24],[64],[4],[31],[6],[40],[17],[15],[19,2],[11],[86],[17],[55],[15],[14,95],[22],[66],[95],[8],[47],[23],[39],[30],[27],[0],[99],[45],[4],[9,11],[6],[81],[18,32],[20],[13],[42],[37,91],[36],[10,37],[96],[57],[20],[89],[18],[41,5],[23],[75],[7],[25,51],[48],[46],[29],[85],[82],[6],[38],[14],[1],[12],[42],[42],[83],[13],[14,20],[17,34],[36],[58],[2],[38],[33,59],[37],[15],[64],[56],[0],[40],[92],[63],[35],[62],[32]];
 
         for (let i = 0; i < commands.length; i++) {
             const command = commands[i];
@@ -284,52 +284,52 @@ describe(`Linked List Cycle II`, () => {
     it(`5`, () => {
         const list = new MyLinkedList();
         const commands = [
-            "addAtHead",
-            "addAtTail",
-            "addAtTail",
-            "addAtTail",
-            "addAtTail",
-            "addAtTail",
-            "addAtTail",
-            "deleteAtIndex",
-            "addAtHead",
-            "addAtHead",
-            "get",
-            "addAtTail",
-            "addAtHead",
-            "get",
-            "addAtTail",
-            "addAtIndex",
-            "addAtTail",
-            "addAtHead",
-            "addAtHead",
-            "addAtHead",
-            "get",
-            "addAtIndex",
-            "addAtHead",
-            "get",
-            "addAtHead",
-            "deleteAtIndex",
-            "addAtHead",
-            "addAtTail",
-            "addAtTail",
-            "addAtIndex",
-            "addAtTail",
-            "addAtHead",
-            "get",
-            "addAtTail",
-            "deleteAtIndex",
-            "addAtIndex",
-            "deleteAtIndex",
-            "addAtHead",
-            "addAtTail",
-            "addAtHead",
-            "addAtHead",
-            "addAtTail",
-            "addAtTail",
-            "get",
-            "get",
-        ]
+            'addAtHead',
+            'addAtTail',
+            'addAtTail',
+            'addAtTail',
+            'addAtTail',
+            'addAtTail',
+            'addAtTail',
+            'deleteAtIndex',
+            'addAtHead',
+            'addAtHead',
+            'get',
+            'addAtTail',
+            'addAtHead',
+            'get',
+            'addAtTail',
+            'addAtIndex',
+            'addAtTail',
+            'addAtHead',
+            'addAtHead',
+            'addAtHead',
+            'get',
+            'addAtIndex',
+            'addAtHead',
+            'get',
+            'addAtHead',
+            'deleteAtIndex',
+            'addAtHead',
+            'addAtTail',
+            'addAtTail',
+            'addAtIndex',
+            'addAtTail',
+            'addAtHead',
+            'get',
+            'addAtTail',
+            'deleteAtIndex',
+            'addAtIndex',
+            'deleteAtIndex',
+            'addAtHead',
+            'addAtTail',
+            'addAtHead',
+            'addAtHead',
+            'addAtTail',
+            'addAtTail',
+            'get',
+            'get'
+        ];
         const values = [
             [38],
             [66],
@@ -376,7 +376,7 @@ describe(`Linked List Cycle II`, () => {
             [39],
             [30],
             [27]
-        ]
+        ];
 
         for (let i = 0; i < commands.length; i++) {
             const command = commands[i];
@@ -408,7 +408,7 @@ describe(`Linked List Cycle II`, () => {
     });
     it(`6`, () => {
         const list = new MyLinkedList();
-        const commands = ["MyLinkedList","addAtHead","get","addAtIndex","addAtIndex","deleteAtIndex","addAtHead","addAtHead","deleteAtIndex","addAtIndex","addAtHead","deleteAtIndex"];
+        const commands = ['MyLinkedList','addAtHead','get','addAtIndex','addAtIndex','deleteAtIndex','addAtHead','addAtHead','deleteAtIndex','addAtIndex','addAtHead','deleteAtIndex'];
         const values = [[],[9],[1],[1,1],[1,7],[1],[7],[4],[1],[1,4],[2],[5]];
 
         for (let i = 0; i < commands.length; i++) {
@@ -441,7 +441,7 @@ describe(`Linked List Cycle II`, () => {
     });
     it(`7`, () => {
         const list = new MyLinkedList();
-        const commands = ["MyLinkedList","addAtHead","addAtIndex","addAtTail","addAtTail","addAtTail","addAtIndex","addAtTail","addAtHead","deleteAtIndex","deleteAtIndex","deleteAtIndex","addAtIndex","addAtTail","get","get","addAtHead","addAtTail","addAtTail","get","addAtTail","addAtTail","deleteAtIndex","deleteAtIndex","addAtHead","addAtTail","addAtIndex","get","addAtTail","addAtIndex","addAtHead","addAtTail","addAtIndex","get","addAtHead","addAtTail","addAtIndex","addAtHead","addAtIndex","addAtTail","addAtHead","addAtIndex","addAtTail","addAtHead","deleteAtIndex","get","addAtIndex","get","addAtIndex","addAtTail","addAtTail","get","deleteAtIndex","get","addAtHead","addAtTail","addAtIndex","addAtIndex","addAtIndex","addAtHead","addAtTail","addAtIndex","deleteAtIndex","addAtHead","addAtHead","addAtTail","get","addAtTail","addAtIndex","addAtHead","deleteAtIndex","addAtHead","deleteAtIndex","get","get","addAtTail","addAtIndex","get","deleteAtIndex","deleteAtIndex","addAtHead","addAtHead","addAtIndex","get","addAtTail","addAtHead","addAtIndex","get","addAtHead","deleteAtIndex","deleteAtIndex","deleteAtIndex","addAtHead","addAtTail","get","addAtHead","addAtTail","addAtHead","addAtHead","deleteAtIndex","get","addAtHead"]
+        const commands = ['MyLinkedList','addAtHead','addAtIndex','addAtTail','addAtTail','addAtTail','addAtIndex','addAtTail','addAtHead','deleteAtIndex','deleteAtIndex','deleteAtIndex','addAtIndex','addAtTail','get','get','addAtHead','addAtTail','addAtTail','get','addAtTail','addAtTail','deleteAtIndex','deleteAtIndex','addAtHead','addAtTail','addAtIndex','get','addAtTail','addAtIndex','addAtHead','addAtTail','addAtIndex','get','addAtHead','addAtTail','addAtIndex','addAtHead','addAtIndex','addAtTail','addAtHead','addAtIndex','addAtTail','addAtHead','deleteAtIndex','get','addAtIndex','get','addAtIndex','addAtTail','addAtTail','get','deleteAtIndex','get','addAtHead','addAtTail','addAtIndex','addAtIndex','addAtIndex','addAtHead','addAtTail','addAtIndex','deleteAtIndex','addAtHead','addAtHead','addAtTail','get','addAtTail','addAtIndex','addAtHead','deleteAtIndex','addAtHead','deleteAtIndex','get','get','addAtTail','addAtIndex','get','deleteAtIndex','deleteAtIndex','addAtHead','addAtHead','addAtIndex','get','addAtTail','addAtHead','addAtIndex','get','addAtHead','deleteAtIndex','deleteAtIndex','deleteAtIndex','addAtHead','addAtTail','get','addAtHead','addAtTail','addAtHead','addAtHead','deleteAtIndex','get','addAtHead'];
         const values = [[],[55],[1,90],[51],[91],[12],[2,72],[17],[82],[4],[7],[7],[5,75],[54],[6],[2],[8],[35],[36],[10],[40],[43],[12],[3],[78],[89],[3,41],[10],[96],[5,37],[51],[26],[16,91],[18],[11],[66],[22,20],[44],[17,16],[95],[2],[14,2],[99],[51],[1],[11],[22,99],[20],[25,42],[72],[45],[2],[4],[32],[55],[84],[32,64],[26,14],[30,80],[88],[51],[27,71],[15],[8],[60],[37],[25],[96],[25,53],[36],[8],[85],[42],[20],[34],[78],[42,76],[26],[30],[39],[27],[93],[19,75],[8],[24],[32],[25,98],[21],[95],[18],[45],[24],[38],[8],[20],[83],[71],[78],[55],[29],[11],[84]];
 
         for (let i = 0; i < commands.length; i++) {
@@ -474,9 +474,9 @@ describe(`Linked List Cycle II`, () => {
     });
     it(`8`, () => {
         const list = new MyLinkedList();
-        const commands = ["MyLinkedList","addAtHead","addAtTail","addAtTail","addAtTail","addAtTail","addAtTail","addAtTail","deleteAtIndex","addAtHead","addAtHead","get","addAtTail","addAtHead","get","addAtTail","addAtIndex","addAtTail","addAtHead","addAtHead","addAtHead","get","addAtIndex","addAtHead","get","addAtHead","deleteAtIndex","addAtHead","addAtTail","addAtTail","addAtIndex","addAtTail","addAtHead","get","addAtTail","deleteAtIndex","addAtIndex","deleteAtIndex","addAtHead","addAtTail","addAtHead","addAtHead","addAtTail","addAtTail","get","get","addAtHead","addAtTail","addAtTail","addAtTail","addAtIndex","get","addAtHead","addAtIndex","addAtHead","addAtTail","addAtTail","addAtIndex","deleteAtIndex","addAtIndex","addAtHead","addAtHead","deleteAtIndex","addAtTail","deleteAtIndex","addAtIndex","addAtTail","addAtHead","get","addAtIndex","addAtTail","addAtHead","addAtHead","addAtHead","addAtHead","addAtHead","addAtHead","deleteAtIndex","get","get","addAtHead","get","addAtTail","addAtTail","addAtIndex","addAtIndex","addAtHead","addAtTail","addAtTail","get","addAtIndex","addAtHead","deleteAtIndex","addAtTail","get","addAtHead","get","addAtHead","deleteAtIndex","get","addAtTail","addAtTail"]
-        const values = [[],[38],[66],[61],[76],[26],[37],[8],[5],[4],[45],[4],[85],[37],[5],[93],[10,23],[21],[52],[15],[47],[12],[6,24],[64],[4],[31],[6],[40],[17],[15],[19,2],[11],[86],[17],[55],[15],[14,95],[22],[66],[95],[8],[47],[23],[39],[30],[27],[0],[99],[45],[4],[9,11],[6],[81],[18,32],[20],[13],[42],[37,91],[36],[10,37],[96],[57],[20],[89],[18],[41,5],[23],[75],[7],[25,51],[48],[46],[29],[85],[82],[6],[38],[14],[1],[12],[42],[42],[83],[13],[14,20],[17,34],[36],[58],[2],[38],[33,59],[37],[15],[64],[56],[0],[40],[92],[63],[35],[62],[32]]
-        const expected = [null,null,null,null,null,null,null,null,null,null,null,61,null,null,61,null,null,null,null,null,null,85,null,null,37,null,null,null,null,null,null,null,null,23,null,null,null,null,null,null,null,null,null,null,-1,95,null,null,null,null,null,31,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,8,null,null,null,null,null,null,null,null,null,6,47,null,23,null,null,null,null,null,null,null,93,null,null,null,null,48,null,93,null,null,59,null,null]
+        const commands = ['MyLinkedList','addAtHead','addAtTail','addAtTail','addAtTail','addAtTail','addAtTail','addAtTail','deleteAtIndex','addAtHead','addAtHead','get','addAtTail','addAtHead','get','addAtTail','addAtIndex','addAtTail','addAtHead','addAtHead','addAtHead','get','addAtIndex','addAtHead','get','addAtHead','deleteAtIndex','addAtHead','addAtTail','addAtTail','addAtIndex','addAtTail','addAtHead','get','addAtTail','deleteAtIndex','addAtIndex','deleteAtIndex','addAtHead','addAtTail','addAtHead','addAtHead','addAtTail','addAtTail','get','get','addAtHead','addAtTail','addAtTail','addAtTail','addAtIndex','get','addAtHead','addAtIndex','addAtHead','addAtTail','addAtTail','addAtIndex','deleteAtIndex','addAtIndex','addAtHead','addAtHead','deleteAtIndex','addAtTail','deleteAtIndex','addAtIndex','addAtTail','addAtHead','get','addAtIndex','addAtTail','addAtHead','addAtHead','addAtHead','addAtHead','addAtHead','addAtHead','deleteAtIndex','get','get','addAtHead','get','addAtTail','addAtTail','addAtIndex','addAtIndex','addAtHead','addAtTail','addAtTail','get','addAtIndex','addAtHead','deleteAtIndex','addAtTail','get','addAtHead','get','addAtHead','deleteAtIndex','get','addAtTail','addAtTail'];
+        const values = [[],[38],[66],[61],[76],[26],[37],[8],[5],[4],[45],[4],[85],[37],[5],[93],[10,23],[21],[52],[15],[47],[12],[6,24],[64],[4],[31],[6],[40],[17],[15],[19,2],[11],[86],[17],[55],[15],[14,95],[22],[66],[95],[8],[47],[23],[39],[30],[27],[0],[99],[45],[4],[9,11],[6],[81],[18,32],[20],[13],[42],[37,91],[36],[10,37],[96],[57],[20],[89],[18],[41,5],[23],[75],[7],[25,51],[48],[46],[29],[85],[82],[6],[38],[14],[1],[12],[42],[42],[83],[13],[14,20],[17,34],[36],[58],[2],[38],[33,59],[37],[15],[64],[56],[0],[40],[92],[63],[35],[62],[32]];
+        const expected = [null,null,null,null,null,null,null,null,null,null,null,61,null,null,61,null,null,null,null,null,null,85,null,null,37,null,null,null,null,null,null,null,null,23,null,null,null,null,null,null,null,null,null,null,-1,95,null,null,null,null,null,31,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,8,null,null,null,null,null,null,null,null,null,6,47,null,23,null,null,null,null,null,null,null,93,null,null,null,null,48,null,93,null,null,59,null,null];
 
         let length = 0;
 
@@ -495,7 +495,6 @@ describe(`Linked List Cycle II`, () => {
             if (['deleteAtIndex'].includes(command)) {
                 length--;
             }
-
 
             // const result = list[command](...value);
             //
@@ -527,19 +526,19 @@ describe(`Intersection of Two Linked Lists`, () => {
     it(`should work`, () => {
         const testCases = [
             {
-                listA: [4,1,8,4,5],
+                list: [4,1,8,4,5],
                 listB: [5,6,1,8,4,5],
                 result: 1
             },
             {
-                listA: [1,9,1,2,4],
+                list: [1,9,1,2,4],
                 listB: [3,2,4],
                 result: 2
             }
         ];
 
         testCases.forEach(testCase => {
-            const listA = makeLinkNodes(testCase.listA);
+            const listA = makeLinkNodes(testCase.list);
             const listB = makeLinkNodes(testCase.listB);
 
             console.log('listA: ', JSON.stringify(listA));
@@ -553,7 +552,7 @@ describe(`Intersection of Two Linked Lists`, () => {
             const value = node ? node.val : 0;
 
             expect(value).to.be.eq(testCase.result);
-        })
+        });
     });
 });
 
@@ -561,35 +560,35 @@ describe(`Remove Nth Node From End of List`, () => {
     it(`should work`, () => {
         const testCases = [
             {
-                listA: [1,5,8],
+                list: [1,5,8],
                 n: 2,
-                result: [1,8],
+                result: [1,8]
             },
             {
-                listA: [1,2,3,4,5],
+                list: [1,2,3,4,5],
                 n: 2,
-                result: [1,2,3,5],
+                result: [1,2,3,5]
             },
             {
-                listA: [1],
+                list: [1],
                 n: 1,
-                result: [],
+                result: []
             },
             {
-                listA: [1,2],
+                list: [1,2],
                 n: 1,
-                result: [1],
+                result: [1]
             },
             {
-                listA: [1,2],
+                list: [1,2],
                 n: 2,
-                result: [2],
+                result: [2]
             }
         ];
 
         testCases.forEach(testCase => {
             const n = testCase.n;
-            const listA = makeLinkNodes(testCase.listA);
+            const listA = makeLinkNodes(testCase.list);
 
             console.log('listA: ', JSON.stringify(listA));
             console.log('n: ', JSON.stringify(n));
@@ -602,7 +601,7 @@ describe(`Remove Nth Node From End of List`, () => {
             console.log('');
 
             expect(resultValues).to.be.deep.eq(testCase.result);
-        })
+        });
     });
 });
 
@@ -610,17 +609,17 @@ describe(`Reverse linked list`, () => {
     it(`should work`, () => {
         const testCases = [
             {
-                listA: [1,2,5],
-                result: [5,2,1],
+                list: [1,2,5],
+                result: [5,2,1]
             },
             {
-                listA: [1,2,3,4,5],
-                result: [5,4,3,2,1],
-            },
+                list: [1,2,3,4,5],
+                result: [5,4,3,2,1]
+            }
         ];
 
         testCases.forEach(testCase => {
-            const listA = makeLinkNodes(testCase.listA);
+            const listA = makeLinkNodes(testCase.list);
 
             console.log('listA: ', JSON.stringify(listA));
 
@@ -632,7 +631,7 @@ describe(`Reverse linked list`, () => {
             console.log('');
 
             expect(resultValues).to.be.deep.eq(testCase.result);
-        })
+        });
     });
 });
 
@@ -650,19 +649,19 @@ describe(`Remove Linked List Elements`, () => {
             //     result: [1,2,3,4,5],
             // },
             {
-                listA: [7,7,7,7],
+                list: [7,7,7,7],
                 val: 7,
-                result: [],
+                result: []
             },
             {
-                listA: [1,2],
+                list: [1,2],
                 val: 1,
-                result: [2],
-            },
+                result: [2]
+            }
         ];
 
         testCases.forEach(testCase => {
-            const listA = makeLinkNodes(testCase.listA);
+            const listA = makeLinkNodes(testCase.list);
 
             console.log('listA: ', JSON.stringify(listA));
             console.log('val: ', JSON.stringify(testCase.val));
@@ -675,6 +674,6 @@ describe(`Remove Linked List Elements`, () => {
             console.log('');
 
             expect(resultValues).to.be.deep.eq(testCase.result);
-        })
+        });
     });
 });
